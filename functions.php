@@ -1,5 +1,6 @@
 <?php
 
+// Load Styles
 function getStyle() {
     wp_register_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css',
         array(), false, 'all');
@@ -12,6 +13,7 @@ function getStyle() {
 
 add_action('wp_enqueue_scripts', 'getStyle');
 
+// Load JS
 function getJS() {
     wp_register_script('bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js',
         'jquery', false, true);
@@ -20,3 +22,9 @@ function getJS() {
 }
 
 add_action('wp_enqueue_scripts', 'getJS');
+
+// Theme Options
+add_theme_support('menus');
+
+// Menus
+register_nav_menus( array('nav-bar' => 'nav bar location', 'mobiles-menu' => 'mobiles menu location') );

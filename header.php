@@ -11,4 +11,12 @@
 <body>
 
 <header>
+    <div class="container">
+        <?php
+            wp_nav_menu( array(
+                'theme-location' => 'nav-menu',
+                'menu_class' => 'nav-bar'
+            ) );
+        ?>
+    <div>
 </header>
