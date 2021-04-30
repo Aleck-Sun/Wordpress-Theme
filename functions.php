@@ -25,6 +25,11 @@ add_action('wp_enqueue_scripts', 'getJS');
 
 // Theme Options
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 // Menus
 register_nav_menus( array('nav-bar' => 'nav bar location', 'mobiles-menu' => 'mobiles menu location') );
+
+// Image Sizes
+add_image_size('blog-large', 100000, 400, true);
+add_image_size('blog-small', 100000, 200, true);

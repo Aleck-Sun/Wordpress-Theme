@@ -29,7 +29,7 @@ header .nav-bar li {
 header .nav-bar li a {
     text-decoration: none;
     color: white;
-    padding: 0 2rem;
+    padding: 0 2vw;
 }
 
 header .nav-bar li .sub-menu {
@@ -39,8 +39,8 @@ header .nav-bar li .sub-menu {
     display: none;
     position:absolute;
     top:100%;
-    left:2rem;
-    background: rgb(83, 83, 83);
+    left:2vw;
+    background: rgb(126, 126, 126);
     width:200px;
     border-radius: 0 0 5px 5px;
     z-index: 50;
@@ -54,4 +54,8 @@ header .nav-bar li .sub-menu li a {
 
 header .nav-bar .menu-item-has-children:hover .sub-menu {
     display: block;
+}
+
+.card {
+    margin-bottom: 20px;
 }
