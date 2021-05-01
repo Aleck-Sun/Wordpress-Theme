@@ -59,3 +59,7 @@ header .nav-bar .menu-item-has-children:hover .sub-menu {
 .card {
     margin-bottom: 20px;
 }
+
+.widget {
+    list-style: none;
+}
